@@ -1,4 +1,4 @@
-body {
+body, textarea {
     font-size: 18px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
@@ -24,6 +24,23 @@ body {
     text-align: left;
 }
 
+p {
+    color: #666666;
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: lighter;
+    text-align: left;
+    line-height: 40px;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+img {
+    float: left;
+    margin-right: 14px;
+}
+
 nav {
     width: 270px;
     float: right;
@@ -36,9 +53,12 @@ nav a {
     text-decoration: none;
     color: #777777;
     font-size: 18px;
-
 }
 
+a:hover {
+    color: teal;
+
+}
 .content-area {
     width: 960px;
     display: inline-block;
@@ -106,4 +126,46 @@ nav a {
     font-size: 30px;
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-weight: bold;
+}
+
+input [type=text]{
+    color: grey;
+    background-color: lightgray;
+
+}
+
+#section p {
+    font-family: sans-serif;
+    font-size: medium;
+    font-weight: lighter;
+}
+
+#section p input {
+    font-family: sans-serif;
+    font-size: medium;
+    font-weight: lighter;
+    color: gray;
+}
+
+button {
+    background-color: #4aaaa5;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    margin: 4px 2px
+}
+
+#section.portfolio img {
+    float: left;
+    margin-right: 14px;
+    margin-top: 14px;
+
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    display: block;
+    font-weight: 100;
 }
