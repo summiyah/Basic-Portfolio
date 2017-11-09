@@ -6,22 +6,17 @@
 
     <style>
         body {
-            background-color: #777;
             font-size: 18px;
             font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
         }
 
-        div {
-            background-color: #ebebeb;
-        }
-
-        #header, #footer {
-            margin: 0 auto;
+        #header, #container, #footer {
+            text-align: center;
         }
 
         #header {
-            text-align: center;
             background-color: #ffffff;
+            border-bottom: 2px solid #cccccc;
         }
 
         #summiyah {
@@ -44,45 +39,68 @@
             font-size: 15px;
             color: #cccccc;
             text-decoration: none;
-
+            box-sizing: border-box;
         }
-
 
         .content-area {
             width: 960px;
             display: inline-block;
         }
 
+        #container {
+            background-image: url("assets/images/intersection.png");
+        }
 
         #footer {
             text-align: center;
             padding: 25px;
+            background-color: #666666;
+            border-top: 6px solid #4aaaa5;
+            margin-top: 40px;
+            color: #cccccc;
+            font-size: 12px;
         }
 
-
         #section {
-            width: 55%;
-            text-align: center;
+            width: 650px;
+            float: left;
+            margin-top: 40px;
             padding: 10px;
             display: inline-block;
             box-sizing: border-box;
-            margin-top: 20px;
-        }
-
-        .section {
-            padding: 20px;
+            background-color: white;
         }
 
         #aside {
             display: inline-block;
-            width: 42%;
-            text-align: center;
-            padding-top: 40px;
+            width: 270px;
             box-sizing: border-box;
-            margin-left: 20px;
-            margin-top: 20px;
-            height: 224px;
             float: right;
+            margin-top: 40px;
+            background-color: white;
+            padding: 30px;
+            border: 1px solid #dddddd;
+        }
+
+        #aside img {
+            width: 55px;
+            height: 55px;
+        }
+
+        #aside h2 {
+            color: #4aaaa5;
+            font-size: 20px;
+            font-family: 'Georgia', Times, Times New Roman, serif;
+            font-weight: bold;
+        }
+
+        #aside hr {
+            margin: 20px 0;
+        }
+
+        #section hr {
+            margin: 20px 0;
+            border: 1px solid #cccccc;
         }
 
     </style>
@@ -99,12 +117,21 @@
     </div>
 </div>
 
-<div id="section">
-    <div class="section">section</div>
-</div>
-<div id="aside">aside</div>
+<div id="container">
+    <div class="content-area">
+        <div id="section">
+            <hr>
+        </div>
+        <div id="aside"><h2>Connect With Me</h2>
+            <hr>
+            <img src="assets/images/linkedin_circle_color-512.png"/>
+            <img src="assets/images/124010.png"/>
+            <img src="assets/images/Dakirby309-Windows-8-Metro-Web-Twitter-alt-2-Metro.ico"/>
+        </div>
 
-<div id="footer">footer</div>
+    </div>
+
+    <div id="footer">&copy; Copyright 2017 Summiyah Siddeeq</div>
 
 </body>
 </html>
